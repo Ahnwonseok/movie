@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Blog Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css2/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .col-md-7{
+      text-align: center; /* 문자들의 가운데 정렬을 해제 */
+      width: 400px;
+      margin-left: 70px;
+      }  
+
+      .blog-post-title{
+      margin-left: 150px;
+      }
+
+      .col-md-8{
+        width: 550px;
+        height: 1000px;
+        font-size: 1.5em;
+        padding-top: 50px;
+        margin-left: 75px;
+      }
+      .blog-post-title2{
+        text-align: center;
+        padding-left: 50px;
+        padding-bottom: 20px;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/static/css2/blog.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="#">Subscribe</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#">movie</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+    
+      </div>
+    </div>
+  </header>
+
+</div>
+
+<main class="container">
+  <div class="aa">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">과연 이 영화가 흥행할까 궁금하시죠?</h1><br>
+      <h3><p>간단한 응답으로 관객수를 예측합니다</p></h3>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-11">국내 영화 흥행 순위</h3>
+          <br>
+          <p class="card-text mb-auto">이 사이트에서 최근까지 국내에 개봉한 모든 영화에 대한 정보를 알려줍니다.</p>
+          <a href="https://www.kobis.or.kr/kobis/business/stat/offc/searchOfficHitTotList.do?searchMode=year" class="stretched-link">>>영화관입장권전산망</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/static/css2/kofic.png" alt="My Image">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+
+          <h3 class="mb-0">현재상영영화</h3>
+          <br>
+          <p class="mb-auto">지금 상영되고 있는 영화랭킹과 정보를 알려줍니다</p>
+          <a href="https://movie.naver.com/" class="stretched-link">>>네이버영화정보</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/static/css2/다운로드.png" alt="My Image">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+
+      <article class="blog-post">
+        <h3 class="blog-post-title">영화정보넣기</h3>
+        <br>
+        <div class="col-md-7 col-lg-8">
+  
+          <form action = "http://localhost:5000/result" method = "POST">
+            <h5><p>감독<br> <input type = "text" class="form-control" name = "영화이름" /></p></h5>
+            <h5><p>감독<br> <input type = "text" class="form-control" name = "감독" /></p></h5>
+            <h5><p>제작사<br> <input type = "text" class="form-control" name = "제작사" /></p></h5>
+            <h5><p>수입사<br> <input type = "text" class="form-control" name = "수입사" /></p></h5>
+            <h5><p>배급사<br> <input type ="text" class="form-control" name = "배급사" /></p></h5>
+            <h5><p>개봉일<br> <input type = "text" class="form-control" name = "개봉일" /></p></h5>
+            <h5><p>국적<br> <input type = "text" class="form-control" name = "국적" /></p></h5>
+            <h5><p>스크린수<br> <input type = "text" class="form-control" name = "스크린수" /></p></h5>
+            <h5><p>장르<br> <input type ="text" class="form-control" name = "장르" /></p></h5> 
+            <h5><p>등급<br> <input type ="text" class="form-control" name = "등급" /></p></h5>          
+            <!-- <p><input type = "submit" class="form-control" value = "submit" /></p> -->
+            <button input type="submit" class="btn btn-secondary">확인하기</button>
+         </form>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-md-8">
+      <h1 class="blog-post-title2">국내역대 흥행순위(Top10)</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>영화이름</th>
+              <th>감독</th>
+              <th>관객수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>명량</td>
+              <td>김한민</td>
+              <td>17,613,682</td>
+            </tr>
+            <tr>
+              <td>극한직업</td>
+              <td>이병헌</td>
+              <td>16,264,944</td>
+            </tr>
+            <tr>
+              <td>신과함께-죄와 벌</td>
+              <td>김용화</td>
+              <td>14,410,754</td>
+            </tr>
+            <tr>
+              <td>국제시장</td>
+              <td>윤제균</td>
+              <td>14,245,998</td>
+            </tr>
+            <tr>
+              <td>어벤져스: 엔드게임</td>
+              <td>안소니 루소 </td>
+              <td>13,934,592</td>
+            </tr>
+            <tr>
+              <td>겨울왕국 2</td>
+              <td>크리스 벅</td>
+              <td>13,747,792</td>
+            </tr>
+            <tr>
+              <td>아바타</td>
+              <td>제임스 카메론</td>
+              <td>13,624,328</td>
+            </tr>
+            <tr>
+              <td>베테랑</td>
+              <td>류승완</td>
+              <td>13,395,400</td>
+            </tr>
+            <tr>
+              <td>괴물</td>
+              <td>봉준호</td>
+              <td>13,019,740</td>
+            </tr>
+            <tr>
+              <td>도둑들</td>
+              <td>최동훈</td>
+              <td>12,983,330</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+
+</main>
+
+<footer class="blog-footer">
+  <p>AI12기 안원석 제작</p>
+</footer>
+  </body>
+</html>

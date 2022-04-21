@@ -1,43 +1,40 @@
-<!DOCTYPE html>
-<html>
+<form>
+	<div class="mb-3">
+		<label for="감독" class="form-label">감독</label>
+		<input type="text" class="form-control" id="감독">
+	</div>
+	<div class="mb-3">
+	  <label for="제작사" class="form-label">제작사</label>
+	  <input type="text" class="form-control" id="제작사">
+	</div>
+	<div class="mb-3">
+		<label for="수입사" class="form-label">수입사</label>
+		<input type="text" class="form-control" id="수입사">
+	</div>	
+	<div class="mb-3">
+	  <label for="배급사" class="form-label">배급사</label>
+	  <input type="text" class="form-control" id="배급사">
+	</div>
+	<div class="mb-3">
+		<label for="개봉일" class="form-label">개봉하는 달</label>
+		<input type="text" class="form-control" id="개봉일">
+	</div>	
 
-  <head>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>Simple Flask</title>
-  </head>
-  <body>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <strong>Simple Flask</strong>
-        </a>
-      </div>
-    </div>
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Simple Flask Application</h1>
-          <br>
-          <p class="lead text-muted">
-          Simple Flask 애플리케이션 메인 페이지에 온 것을 환영합니다
-          </p>
-          <br>
-          <br>
-          <ul style="list-style-type: none;">
-            <li>
-              해당 URL 주소에 '/users' 를 통해 유저 목록을 조회할 수 있습니다.
-            </li>
-            <li>
-              특정 유저를 조회하려면 '/users/{유저 번호}' 를 통해 조회할 수
-              있습니다.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </body>
-</html>
-
+	<div class="mb-3">
+	  <label for="국적" class="form-label">국적</label>
+	  <input type="text" class="form-control" id="국적">
+	</div>
+	<div class="mb-3">
+		<label for="스크린수" class="form-label">스크린수</label>
+		<input type="text" class="form-control" id="스크린수">
+	</div>	
+	<div class="mb-3">
+		<label for="장르" class="form-label">장르</label>
+		<input type="text" class="form-control" id="장르">
+	</div>	
+	<div class="mb-3">
+		<label for="등급" class="form-label">등급</label>
+		<input type="text" class="form-control" id="등급">
+	</div>			    
+	<button type="submit" class="btn btn-primary" value = "submit">Submit</button>
+  </form>

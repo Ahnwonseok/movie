@@ -6,12 +6,12 @@ Simple Flask App 입니다.
 """
 import os,csv
 from flask import Flask,render_template
-
+from routes.mainn import bp as main_bp
 # 추가로 필요한 패키지들이 있는 경우 가져와 사용합니다.
 
 # 'app' 은 플라스크 애플리케이션 객체입니다.
 app = Flask(__name__)
-
+app.register_blueprint(main_bp)
 # CSV 파일이 어디에 있는지 알려주는 설정입니다.
 # CSV 파일은 수정하지 않습니다!
 app.config['USERS_CSV_FILE'] = os.path.join(os.path.dirname(__file__), 'users.csv')
